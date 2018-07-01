@@ -39,6 +39,11 @@ class Emacs < Formula
   depends_on "imagemagick@6" => :optional
   depends_on "mailutils" => :optional
 
+  patch do
+    url "https://gist.githubusercontent.com/takaxp/01ff965361d70de93e9aba3795193cc7/raw/4265d48c13f33a2046669086756c85a2bb83c318/ns-private.patch"
+    sha256 "ba075f17f17adb31276fa1aacea5b81ad2142a5ddf6fc97cff1fa860cd725f60"
+  end
+
   def install
     args = %W[
       --disable-dependency-tracking
