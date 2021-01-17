@@ -1,6 +1,9 @@
 # Overview
 
-My homebrew formula of Emacs.
+My homebrew formula.
+
+- Emacs
+- FBX SDK
 
 # Usage
 
